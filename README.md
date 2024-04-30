@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+<h1 align="center"> Projeto -  Buscador CEP com REACT 💻 </h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center"> <a href="https://sujeitoprogramador.com/" target="_blank">Sujeito Programador </a> </p>
 
-## Available Scripts
+<p align="center">
+<a href="#sobre">Sobre</a>&nbsp;&nbsp;&nbsp|&nbsp;&nbsp;&nbsp;
+<a href="#tecnologia">Tecnologia</a>&nbsp;&nbsp;&nbsp|&nbsp;&nbsp;&nbsp;
+<a href="#autor">Autor</a>.</p>
 
-In the project directory, you can run:
+# Sobre
 
-### `npm start`
+No youtube com sujeito programador para pratica e conhecer mais os comando do REACT, fiz uma cópia do buscador de Cep com motificação na imagem.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+O buscador de CEP é uma aplicação web simples que permite aos usuários pesquisar por informações de endereço usando um CEP (Código de Endereçamento Postal) específico. Aqui está imagem detalhada de como a aplicação funciona.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<br>
 
-### `npm test`
+<p align="center">
+<img src="./src/img/imgbuscador.png" height="400" width="800">
+  <br>
+      
+ </p>
+ <p align="center">
+    01 - Figura buscador de Cep na Web.
+ </p>
+<br>
+ </p>
+ <br>
+ Após uma busca bem-sucedida, os detalhes do endereço correspondente ao CEP são exibidos abaixo do campo de entrada. Os detalhes incluem o próprio CEP, logradouro, complemento, bairro, localidade (cidade) e UF (unidade federativa ou estado).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<br>
 
-### `npm run build`
+ <p align="center">
+<img src="./src/img/imgbuscado1.png" height="400" width="800">
+  <br>
+      
+ </p>
+ <p align="center">
+    02 - Figura buscador de Cep na Web sendo acessando.
+ </p>
+<br>
+ </p>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<br>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Descrição do Código "Buscador de Cep"
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**useState:** Este código importa o hook useState do React para gerenciar o estado da aplicação. Duas variáveis de estado são declaradas: input para armazenar o valor digitado pelo usuário no campo de entrada, e cep para armazenar os detalhes do endereço recuperados da API.
 
-### `npm run eject`
+**handleSearch:** Esta é uma função assíncrona que é chamada quando o usuário clica no botão de busca. Ele verifica se o campo de entrada está vazio e exibe um alerta se estiver. Em seguida, ele faz uma solicitação à API fornecida com o CEP digitado pelo usuário. Se a solicitação for bem-sucedida, os detalhes do endereço são armazenados no estado cep, e o campo de entrada é limpo. Se ocorrer um erro durante a solicitação, um alerta de erro é exibido e o campo de entrada é limpo.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Renderização JS**: O retorno da função App é uma estrutura JS que define a interface da aplicação. Ela inclui um título, um campo de entrada para o usuário digitar o CEP, um botão de busca, e uma seção para exibir os detalhes do endereço. A imagem do ícone de busca também é renderizada ao lado do campo de entrada.
+Condição de Renderização: A seção que exibe os detalhes do endereço só é renderizada se o objeto cep tiver chaves (ou seja, se tiver informações de endereço disponíveis).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Estilização:** A aplicação presume que há um arquivo CSS (App.css) para estilizar os elementos HTML. Os estilos são aplicados para criar uma interface de usuário atraente e responsiva.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Tecnologia
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Esse projeto foi desenvolvindo com as seguintes tecnologias:
 
-## Learn More
+- IDE VisualStudio Code
+- HTML
+- CSS
+- JavaScript
+- React
+- Git e Github
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Autor
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+_Daniela Velter_
+<br>
+<br>
+[![Linkedin](https://img.shields.io/badge/DANIELA-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/daniela-velter-231485f/)
