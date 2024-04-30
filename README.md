@@ -27,9 +27,8 @@ O buscador de CEP é uma aplicação web simples que permite aos usuários pesqu
  </p>
  <br>
  Após uma busca bem-sucedida, os detalhes do endereço correspondente ao CEP são exibidos abaixo do campo de entrada. Os detalhes incluem o próprio CEP, logradouro, complemento, bairro, localidade (cidade) e UF (unidade federativa ou estado).
-
 <br>
-
+<br>
  <p align="center">
 <img src="./src/img/imgbuscado1.png" height="400" width="800">
   <br>
